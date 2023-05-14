@@ -44,12 +44,12 @@ export function Seccion_Recomedado (props){
 
 const styles = StyleSheet.create({
   containerK: {
-    borderTopWidth:3,
-    borderTopColor:'#FCC31F',
+    borderTopWidth:2,
+    borderTopColor:'#9D5EBA',
     borderTopLeftRadius:5,
     borderTopEndRadius:5,
-    borderBottomWidth:3,
-    borderBottomColor:'#FCC31F',
+    borderBottomWidth:2,
+    borderBottomColor:'#9D5EBA',
     borderBottomLeftRadius:5,
     borderBottomEndRadius:5,
     width:'100%',
