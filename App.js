@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import {Seccion_Anime, Seccion_Recomedado, Seccion_accion} from './components/Secciones';
 import AntDesign from 'react-native-vector-icons/AntDesign'
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 
 export default function App() {
   return (
@@ -9,7 +10,10 @@ export default function App() {
       <StatusBar style="auto" />
       <ScrollView style={styles.subcontainer}>
          <View style={styles.containerSecundario}>
-         <Text style={styles.tituloPrincipal}>Peliculas perronas</Text>
+          <View style={styles.head}>
+          <Text style={styles.tituloPrincipal}>Peliculas perronas</Text>
+          <MaterialCommunityIcons name='movie-open-edit-outline' style={styles.iconocabecera} />
+          </View>
          <TextInput placeholder='Buscar aqui' style={styles.buscador}></TextInput>
       </View>
        <View style={styles.containerSecundario1}>
@@ -36,6 +40,12 @@ const styles = StyleSheet.create({
   subcontainer:{
     width: '90%',
   },
+  head:{
+    flex:1,
+    flexDirection:'row',
+    alignItems: 'center',
+    justifyContent:'space-between',
+  },
   containerSecundario: {
     width: '100%',
   },
@@ -57,5 +67,9 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     padding: 10,
     marginTop:30,
+  },
+  iconocabecera:{
+    fontSize: 30,
+    color: '#fff',
   }
 });

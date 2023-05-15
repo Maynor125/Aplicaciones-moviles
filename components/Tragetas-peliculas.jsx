@@ -25,7 +25,10 @@ const styles = StyleSheet.create({
     width:130,
     height:190,
     borderRadius:8,
-    shadowOpacity:2,
+    shadowColor:'#C9C9CC',
+    shadowOffset:{width:-2, height:4},
+    shadowOpacity: 0.2,
+    shadowRadius: 3,
    },
    nombrePelicula:{
     fontSize: 15,
