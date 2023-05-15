@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import {Seccion_Anime, Seccion_Recomedado, Seccion_accion} from './components/Secciones';
-import AntDesign from 'react-native-vector-icons/AntDesign'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+import FontAwesome from 'react-native-vector-icons/FontAwesome'
 
 export default function App() {
   return (
@@ -12,9 +12,9 @@ export default function App() {
          <View style={styles.containerSecundario}>
           <View style={styles.head}>
           <Text style={styles.tituloPrincipal}>Peliculas perronas</Text>
-          <MaterialCommunityIcons name='movie-open-edit-outline' style={styles.iconocabecera} />
+          <FontAwesome name='user' style={styles.iconocabecera} />
           </View>
-         <TextInput placeholder='Buscar aqui' style={styles.buscador}></TextInput>
+         <TextInput placeholder='Buscar aqui' placeholderTextColor={'#B8B8BC'} style={styles.buscador}></TextInput>
       </View>
        <View style={styles.containerSecundario1}>
        <Seccion_Recomedado nombre='Recomendado'/>
@@ -63,10 +63,12 @@ const styles = StyleSheet.create({
   buscador: {
     height: 50,
     width: '100%',
-    backgroundColor: '#fff',
+    borderColor: '#fff',
+    borderWidth: 1,
     borderRadius: 10,
     padding: 10,
     marginTop:30,
+    color: '#fff',
   },
   iconocabecera:{
     fontSize: 30,
